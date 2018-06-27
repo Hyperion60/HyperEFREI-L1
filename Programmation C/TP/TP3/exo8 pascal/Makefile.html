@@ -1,0 +1,30 @@
+# Project: pascal
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = pascal.o $(RES)
+LINKOBJ  = pascal.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = pascal.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before pascal.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "pascal.exe" $(LIBS)
+
+pascal.o: pascal.c
+	$(CC) -c pascal.c -o pascal.o $(CFLAGS)

@@ -1,0 +1,30 @@
+# Project: verif
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = verif.o $(RES)
+LINKOBJ  = verif.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = verif.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before verif.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "verif.exe" $(LIBS)
+
+verif.o: verif.c
+	$(CC) -c verif.c -o verif.o $(CFLAGS)

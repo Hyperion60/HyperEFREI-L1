@@ -1,0 +1,30 @@
+# Project: tabptr
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = tabptr.o $(RES)
+LINKOBJ  = tabptr.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = tabptr.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before tabptr.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "tabptr.exe" $(LIBS)
+
+tabptr.o: tabptr.c
+	$(CC) -c tabptr.c -o tabptr.o $(CFLAGS)

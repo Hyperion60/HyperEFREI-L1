@@ -1,0 +1,30 @@
+# Project: alloc2d
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = alloc2d.o $(RES)
+LINKOBJ  = alloc2d.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = alloc2d.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before alloc2d.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "alloc2d.exe" $(LIBS)
+
+alloc2d.o: alloc2d.c
+	$(CC) -c alloc2d.c -o alloc2d.o $(CFLAGS)

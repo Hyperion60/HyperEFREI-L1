@@ -1,0 +1,30 @@
+# Project: ultimeverif
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = ultimeverif.o $(RES)
+LINKOBJ  = ultimeverif.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = ultimeverif.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ultimeverif.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "ultimeverif.exe" $(LIBS)
+
+ultimeverif.o: ultimeverif.c
+	$(CC) -c ultimeverif.c -o ultimeverif.o $(CFLAGS)

@@ -1,0 +1,30 @@
+# Project: alloc1d
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = alloc1d.o $(RES)
+LINKOBJ  = alloc1d.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = alloc1d.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before alloc1d.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "alloc1d.exe" $(LIBS)
+
+alloc1d.o: alloc1d.c
+	$(CC) -c alloc1d.c -o alloc1d.o $(CFLAGS)

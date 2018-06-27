@@ -1,0 +1,30 @@
+# Project: allocdyn
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = allocdyn.o $(RES)
+LINKOBJ  = allocdyn.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = allocdyn.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before allocdyn.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "allocdyn.exe" $(LIBS)
+
+allocdyn.o: allocdyn.c
+	$(CC) -c allocdyn.c -o allocdyn.o $(CFLAGS)
