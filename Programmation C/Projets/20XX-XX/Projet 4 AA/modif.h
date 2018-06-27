@@ -1,0 +1,2 @@
+void emprunt ();
+void retour ();
