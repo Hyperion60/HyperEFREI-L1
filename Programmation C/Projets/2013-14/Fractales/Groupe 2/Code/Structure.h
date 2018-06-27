@@ -1,0 +1,4 @@
+struct complexe{
+    double reel;
+    double imaginaire;
+};
