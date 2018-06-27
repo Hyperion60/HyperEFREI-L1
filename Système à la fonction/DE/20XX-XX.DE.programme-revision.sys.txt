@@ -1,0 +1,40 @@
+Chers étudiants,
+
+ 
+
+Conformément aux engagements que j'ai pris avec vous, je vous communique un programme de révision pour le DE du 5 avril. En contrepartie, je considèrerais inexcusables les notes catastrophiques (seuil à définir, autour de 4 ou 5 sur 20), et je demanderais à la scolarité d'appliquer des sanctions supplémentaires aux élèves ayant des notes inférieures à ce seuil d'intolérance.
+
+ 
+
+Voici votre programme de révision :
+
+1/ Les questions suivantes seront posées (quasiment) telles quelles dans des exercices au DE. Il vous est donc fortement suggéré de vérifier que vous *savez les refaire*. Pour cela, la seule solution est de les faire chez vous, sans le corrigé sous les yeux, bien sur. Puis vous vérifiez vos résultats, et recommencez plus tard en cas d'erreur.
+
+- question 2.3 du TD4
+
+- schéma n°1 de la question 1 du CE
+
+ 
+
+2/ Il vous est également fortement suggéré de savoir refaire les exercices suivants, car ils synthétisent une part importante des compétences que vous devez avoir appris. Le DE portera notamment sur des compétences que ces exercices mettent en oeuvre.
+
+- question 1.2 du TD1, transfert en puissance du quadripôle diviseur de tension (R1, R2)
+
+- question 1.4 du TD3
+
+- question 1.1ou 1.2 du TD4 (méthode pour calculer le gain en tension et le gain en puissance
+en fonction du gain en dB)
+
+- question 3 du TD5
+
+ 
+
+3/ Bien évidement, le DE portera également sur des questions du cours (amphi). Vous pouvez vous aider du mémo de cours pour réviser (voir mon précédent message sur la question).
+
+ 
+
+Je vous souhaite des révisions efficaces.
+
+Cordialement,
+
+Pierre Prot

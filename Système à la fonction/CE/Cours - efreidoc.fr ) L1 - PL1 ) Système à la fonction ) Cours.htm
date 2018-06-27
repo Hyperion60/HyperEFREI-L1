@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>.ll-nam{color:#2196f3}.ll-num{color:#ec407a}.ll-str{color:#43a047}.ll-rex{color:#ef6c00}.ll-pct{color:#666}.ll-key{color:#555;font-weight:bold}.ll-com{color:#aaa;font-style:italic}</style>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Cours - efreidoc.fr &gt; L1 - PL1 &gt; Système à la fonction &gt; Cours</title>
+<meta name="description" content="Ressources numériques pour les étudiants de l'Efrei">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://i.imgur.com/7S6y2fV.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" href="https://i.imgur.com/7S6y2fV.png">
+<link rel="stylesheet" href="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/styles.css">
+
+<script async="" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/analytics.js"></script><script async="" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/adsbygoogle.js"></script>
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-92424600-1', 'auto');
+			ga('send', 'pageview');
+		</script><style>#view.view-details.view-size-20 .item .label {line-height: 34px !important;}
+#view.view-details.view-size-20 .item .date {line-height: 34px !important;}
+#view.view-details.view-size-20 .item .size {line-height: 34px !important;}
+#view.view-details.view-size-20 .square {width: 20px !important; height: 20px !important;}
+#view.view-details.view-size-20 .square img {width: 20px !important; height: 20px !important;}
+#view.view-details.view-size-20 .label {margin-left: 52px !important;}
+#view.view-grid.view-size-20 .item .label {line-height: 40px !important;}
+#view.view-grid.view-size-20 .square {width: 40px !important; height: 40px !important;}
+#view.view-grid.view-size-20 .square img {width: 40px !important; height: 40px !important;}
+#view.view-icons.view-size-20 .item {width: 107px !important;}
+#view.view-icons.view-size-20 .landscape {width: 107px !important; height: 80px !important;}
+#view.view-icons.view-size-20 .landscape img {width: 80px !important; height: 80px !important;}
+#view.view-icons.view-size-20 .landscape .thumb {width: 107px !important;}
+#view.view-details.view-size-40 .item .label {line-height: 54px !important;}
+#view.view-details.view-size-40 .item .date {line-height: 54px !important;}
+#view.view-details.view-size-40 .item .size {line-height: 54px !important;}
+#view.view-details.view-size-40 .square {width: 40px !important; height: 40px !important;}
+#view.view-details.view-size-40 .square img {width: 40px !important; height: 40px !important;}
+#view.view-details.view-size-40 .label {margin-left: 72px !important;}
+#view.view-grid.view-size-40 .item .label {line-height: 40px !important;}
+#view.view-grid.view-size-40 .square {width: 40px !important; height: 40px !important;}
+#view.view-grid.view-size-40 .square img {width: 40px !important; height: 40px !important;}
+#view.view-icons.view-size-40 .item {width: 107px !important;}
+#view.view-icons.view-size-40 .landscape {width: 107px !important; height: 80px !important;}
+#view.view-icons.view-size-40 .landscape img {width: 80px !important; height: 80px !important;}
+#view.view-icons.view-size-40 .landscape .thumb {width: 107px !important;}
+#view.view-details.view-size-60 .item .label {line-height: 74px !important;}
+#view.view-details.view-size-60 .item .date {line-height: 74px !important;}
+#view.view-details.view-size-60 .item .size {line-height: 74px !important;}
+#view.view-details.view-size-60 .square {width: 60px !important; height: 60px !important;}
+#view.view-details.view-size-60 .square img {width: 60px !important; height: 60px !important;}
+#view.view-details.view-size-60 .label {margin-left: 92px !important;}
+#view.view-grid.view-size-60 .item .label {line-height: 60px !important;}
+#view.view-grid.view-size-60 .square {width: 60px !important; height: 60px !important;}
+#view.view-grid.view-size-60 .square img {width: 60px !important; height: 60px !important;}
+#view.view-icons.view-size-60 .item {width: 107px !important;}
+#view.view-icons.view-size-60 .landscape {width: 107px !important; height: 80px !important;}
+#view.view-icons.view-size-60 .landscape img {width: 80px !important; height: 80px !important;}
+#view.view-icons.view-size-60 .landscape .thumb {width: 107px !important;}
+#view.view-details.view-size-80 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-80 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-80 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-80 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-80 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-80 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-80 .item .label {line-height: 80px !important;}
+#view.view-grid.view-size-80 .square {width: 80px !important; height: 80px !important;}
+#view.view-grid.view-size-80 .square img {width: 80px !important; height: 80px !important;}
+#view.view-icons.view-size-80 .item {width: 107px !important;}
+#view.view-icons.view-size-80 .landscape {width: 107px !important; height: 80px !important;}
+#view.view-icons.view-size-80 .landscape img {width: 80px !important; height: 80px !important;}
+#view.view-icons.view-size-80 .landscape .thumb {width: 107px !important;}
+#view.view-details.view-size-100 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-100 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-100 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-100 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-100 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-100 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-100 .item .label {line-height: 100px !important;}
+#view.view-grid.view-size-100 .square {width: 100px !important; height: 100px !important;}
+#view.view-grid.view-size-100 .square img {width: 100px !important; height: 100px !important;}
+#view.view-icons.view-size-100 .item {width: 133px !important;}
+#view.view-icons.view-size-100 .landscape {width: 133px !important; height: 100px !important;}
+#view.view-icons.view-size-100 .landscape img {width: 100px !important; height: 100px !important;}
+#view.view-icons.view-size-100 .landscape .thumb {width: 133px !important;}
+#view.view-details.view-size-140 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-140 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-140 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-140 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-140 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-140 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-140 .item .label {line-height: 140px !important;}
+#view.view-grid.view-size-140 .square {width: 140px !important; height: 140px !important;}
+#view.view-grid.view-size-140 .square img {width: 140px !important; height: 140px !important;}
+#view.view-icons.view-size-140 .item {width: 187px !important;}
+#view.view-icons.view-size-140 .landscape {width: 187px !important; height: 140px !important;}
+#view.view-icons.view-size-140 .landscape img {width: 140px !important; height: 140px !important;}
+#view.view-icons.view-size-140 .landscape .thumb {width: 187px !important;}
+#view.view-details.view-size-180 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-180 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-180 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-180 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-180 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-180 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-180 .item .label {line-height: 160px !important;}
+#view.view-grid.view-size-180 .square {width: 160px !important; height: 160px !important;}
+#view.view-grid.view-size-180 .square img {width: 160px !important; height: 160px !important;}
+#view.view-icons.view-size-180 .item {width: 240px !important;}
+#view.view-icons.view-size-180 .landscape {width: 240px !important; height: 180px !important;}
+#view.view-icons.view-size-180 .landscape img {width: 180px !important; height: 180px !important;}
+#view.view-icons.view-size-180 .landscape .thumb {width: 240px !important;}
+#view.view-details.view-size-220 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-220 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-220 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-220 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-220 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-220 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-220 .item .label {line-height: 160px !important;}
+#view.view-grid.view-size-220 .square {width: 160px !important; height: 160px !important;}
+#view.view-grid.view-size-220 .square img {width: 160px !important; height: 160px !important;}
+#view.view-icons.view-size-220 .item {width: 293px !important;}
+#view.view-icons.view-size-220 .landscape {width: 293px !important; height: 220px !important;}
+#view.view-icons.view-size-220 .landscape img {width: 220px !important; height: 220px !important;}
+#view.view-icons.view-size-220 .landscape .thumb {width: 293px !important;}
+#view.view-details.view-size-260 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-260 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-260 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-260 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-260 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-260 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-260 .item .label {line-height: 160px !important;}
+#view.view-grid.view-size-260 .square {width: 160px !important; height: 160px !important;}
+#view.view-grid.view-size-260 .square img {width: 160px !important; height: 160px !important;}
+#view.view-icons.view-size-260 .item {width: 347px !important;}
+#view.view-icons.view-size-260 .landscape {width: 347px !important; height: 260px !important;}
+#view.view-icons.view-size-260 .landscape img {width: 260px !important; height: 260px !important;}
+#view.view-icons.view-size-260 .landscape .thumb {width: 347px !important;}
+#view.view-details.view-size-300 .item .label {line-height: 94px !important;}
+#view.view-details.view-size-300 .item .date {line-height: 94px !important;}
+#view.view-details.view-size-300 .item .size {line-height: 94px !important;}
+#view.view-details.view-size-300 .square {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-300 .square img {width: 80px !important; height: 80px !important;}
+#view.view-details.view-size-300 .label {margin-left: 112px !important;}
+#view.view-grid.view-size-300 .item .label {line-height: 160px !important;}
+#view.view-grid.view-size-300 .square {width: 160px !important; height: 160px !important;}
+#view.view-grid.view-size-300 .square img {width: 160px !important; height: 160px !important;}
+#view.view-icons.view-size-300 .item {width: 400px !important;}
+#view.view-icons.view-size-300 .landscape {width: 400px !important; height: 300px !important;}
+#view.view-icons.view-size-300 .landscape img {width: 300px !important; height: 300px !important;}
+#view.view-icons.view-size-300 .landscape .thumb {width: 400px !important;}
+#view .icon img {max-width: 40px; max-height: 40px;}</style></head><body id="root" class="index"><div id="topbar">
+            <div id="toolbar"><div id="sidebar-toggle" class="tool">
+            <img alt="sidebar" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/sidebar.svg">
+        </div></div>
+            <div id="flowbar"><div id="crumbbar"><a class="crumb" href="http://efreidoc.fr/">
+            <img class="sep" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/crumb.svg" alt="&gt;">
+            <span class="label">efreidoc.fr</span>
+        </a><a class="crumb" href="http://efreidoc.fr/L1%20-%20PL1/">
+            <img class="sep" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/crumb.svg" alt="&gt;">
+            <span class="label">L1 - PL1</span>
+        </a><a class="crumb" href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/">
+            <img class="sep" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/crumb.svg" alt="&gt;">
+            <span class="label">Système à la fonction</span>
+        </a><a class="crumb active" href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/">
+            <img class="sep" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/crumb.svg" alt="&gt;">
+            <span class="label">Cours</span>
+        </a></div></div>
+            <a id="backlink" href="https://larsjung.de/h5ai/" title="powered by h5ai - https://larsjung.de/h5ai/">
+                <div>powered</div>
+                <div>by h5ai</div>
+            </a>
+        </div><div id="mainrow">
+            <div id="content"><div id="content-header" class="hidden"></div><div id="view" class="view-details view-size-20">
+            <ul id="items" class="clearfix">
+                <li class="header">
+                    <a class="icon"></a>
+                    <a class="label ascending" href="#"><span class="l10n-name">Nom</span><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/sort.svg" class="sort" alt="sort order"></a>
+                    <a class="date" href="#"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/sort.svg" class="sort" alt="sort order"><span class="l10n-lastModified">Dernière modification</span></a>
+                    <a class="size" href="#"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/sort.svg" class="sort" alt="sort order"><span class="l10n-size">Taille</span></a>
+                </li>
+            <li class="item folder folder-parent">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder-parent.svg" alt="folder"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder-parent.svg" alt="folder"></span>
+                <span class="label" title="Système à la fonction">Système à la fonction</span>
+                <span class="date" data-time="1529307006000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="null"></span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2005-06.cours.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-bf0bb208746446f50821ce9ed6d3af187ac3cbf4-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-bf0bb208746446f50821ce9ed6d3af187ac3cbf4-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2005-06.cours.sys.pdf">2005-06.cours.sys.pdf</span>
+                <span class="date" data-time="1529307007000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="558771">559 KB</span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2011-12.cours.chapitre-1.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-511badd8cb39a0abf155b80e67820fe54bd17b70-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-511badd8cb39a0abf155b80e67820fe54bd17b70-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2011-12.cours.chapitre-1.sys.pdf">2011-12.cours.chapitre-1.sys.pdf</span>
+                <span class="date" data-time="1529307010000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="3775133">3.8 MB</span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2012-13.cours.amphi.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-c077179335312509770bf5a209c1f166cfeb360b-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-c077179335312509770bf5a209c1f166cfeb360b-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2012-13.cours.amphi.sys.pdf">2012-13.cours.amphi.sys.pdf</span>
+                <span class="date" data-time="1529307007000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="1145105">1.1 MB</span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2013-14.cours.complet.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-bfd4b08ca60ec9e391046b7ae411d3633937f9c5-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-bfd4b08ca60ec9e391046b7ae411d3633937f9c5-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2013-14.cours.complet.sys.pdf">2013-14.cours.complet.sys.pdf</span>
+                <span class="date" data-time="1529307007000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="659318">659 KB</span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2015-16.cours.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-c6546922a9542eb40dabf81043fcfd46f958b2e0-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-c6546922a9542eb40dabf81043fcfd46f958b2e0-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2015-16.cours.sys.pdf">2015-16.cours.sys.pdf</span>
+                <span class="date" data-time="1529307007000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="405228">405 KB</span>
+            </a>
+        </li><li class="item file">
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/2016-17.cours.sys.pdf">
+                <span class="icon square"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-ad187231f15572ef86cb20134659c875ef4a01c0-240x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="icon landscape"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/thumb-ad187231f15572ef86cb20134659c875ef4a01c0-320x240.jpg" alt="x-pdf" class="thumb"></span>
+                <span class="label" title="2016-17.cours.sys.pdf">2016-17.cours.sys.pdf</span>
+                <span class="date" data-time="1529307010000">18/06/2018 09:30</span>
+                <span class="size" data-bytes="4950750">5.0 MB</span>
+            </a>
+        </li></ul>
+            <div id="view-hint" class="l10n-empty hidden">vide</div>
+        </div><div id="content-footer" class=""><center>
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2625248861663337" data-ad-slot="2352016277" data-ad-format="auto"></ins>
+	<p>La publicité permet de compenser une (très petite) partie des frais du site : soyez sympa, désactivez AdBlock. ¯\_(ツ)_/¯<br>
+</p></center>
+</div></div>
+        <div id="sidebar" class="hidden"><div id="viewmode-settings" class="block"><h1 class="l10n-view">Disposition</h1><div id="viewmode-details" class="button mode active">
+            <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/view-details.svg" alt="viewmode-details">
+        </div><div id="viewmode-grid" class="button mode">
+            <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/view-grid.svg" alt="viewmode-grid">
+        </div><div id="viewmode-icons" class="button mode">
+            <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/view-icons.svg" alt="viewmode-icons">
+        </div><input id="viewmode-size" min="0" max="9" value="0" type="range"></div><div class="block">
+            <h1 class="l10n-language">Langue</h1>
+            <div class="select">
+                <select id="langs">
+            
+        <option value="af" class="af">af - afrikaans</option><option value="bg" class="bg">bg - български</option><option value="cs" class="cs">cs - čeština</option><option value="da" class="da">da - dansk</option><option value="de" class="de">de - deutsch</option><option value="el" class="el">el - ελληνικά</option><option value="en" class="en">en - english</option><option value="es" class="es">es - español</option><option value="et" class="et">et - estonian</option><option value="fi" class="fi">fi - finnish</option><option value="fr" class="fr" selected="selected">fr - français</option><option value="he" class="he">he - עברית</option><option value="hi" class="hi">hi - हिंदी</option><option value="hr" class="hr">hr - hrvatski</option><option value="hu" class="hu">hu - magyar</option><option value="it" class="it">it - italiano</option><option value="ja" class="ja">ja - 日本語</option><option value="ko" class="ko">ko - 한국어</option><option value="lv" class="lv">lv - latviešu</option><option value="nb" class="nb">nb - norwegian</option><option value="nl" class="nl">nl - nederlands</option><option value="pl" class="pl">pl - polski</option><option value="pt" class="pt">pt - português</option><option value="ro" class="ro">ro - română</option><option value="ru" class="ru">ru - русский</option><option value="sk" class="sk">sk - slovenčina</option><option value="sl" class="sl">sl - slovenščina</option><option value="sr" class="sr">sr - srpski</option><option value="sv" class="sv">sv - svenska</option><option value="tr" class="tr">tr - türkçe</option><option value="uk" class="uk">uk - українська</option><option value="zh-cn" class="zh-cn">zh-cn - 简体中文</option><option value="zh-tw" class="zh-tw">zh-tw - 正體中文</option></select></div></div><div class="block">
+            <h1 class="l10n-tree">Arborescence</h1>
+            <div id="view-tree" class="button view active">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-toggle.svg" alt="view-tree">
+            </div>
+        </div></div><div id="tree" class=""><div class="item folder open">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">efreidoc.fr</span>
+            </a>
+        <div class="content"><div class="item folder open">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">L1 - PL1</span>
+            </a>
+        <div class="content"><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Algorithmie/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Algorithmie</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Alg%C3%A8bre%20lin%C3%A9aire/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Algèbre linéaire</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Allemand/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Allemand</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Anglais/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Anglais</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Atome%20%C3%A0%20la%20puce/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Atome à la puce</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Communication/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Communication</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Entreprise/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Entreprise</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Environnement%20%C3%A9conomique/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Environnement économique</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Espagnol/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Espagnol</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Fili%C3%A8re%20internationale/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Filière internationale</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Fonctions%20et%20variations/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Fonctions et variations</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Information%20num%C3%A9rique/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Information numérique</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/M%C3%A9canique/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Mécanique</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Nombres%20et%20structures/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Nombres et structures</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Optique/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Optique</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Ordinateur%20Quantique/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Ordinateur Quantique</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Programmation%20C/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Programmation C</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Rapports%20de%20stage/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Rapports de stage</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Statistiques/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Statistiques</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Structurer%20un%20%C3%A9crit/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Structurer un écrit</span>
+            </a>
+        </div><div class="item folder open">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Système à la fonction</span>
+            </a>
+        <div class="content"><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/CE/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">CE</span>
+            </a>
+        </div><div class="item folder active none">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Cours/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Cours</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/DE/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">DE</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Projets/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Projets</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/Rappels/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Rappels</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/TD/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">TD</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Syst%C3%A8me%20%C3%A0%20la%20fonction/TP/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">TP</span>
+            </a>
+        </div></div></div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/Voix%20et%20image/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Voix et image</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/%C3%89conomie/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Économie</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/%C3%89lectricit%C3%A9/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Électricité</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L1%20-%20PL1/%C3%89nergie%20et%20onde/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">Énergie et onde</span>
+            </a>
+        </div></div></div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L2%20-%20PL2/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">L2 - PL2</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/L3/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">L3</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/M1/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">M1</span>
+            </a>
+        </div><div class="item folder unknown">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/M2/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder.svg"></span>
+                <span class="label">M2</span>
+            </a>
+        </div><div class="item folder none">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/Poisson%20d%27avril%202k17/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder-page.svg"></span>
+                <span class="label">Poisson d'avril 2k17</span>
+            </a>
+        </div><div class="item folder none">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/Poisson%20d%27avril%202016/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder-page.svg"></span>
+                <span class="label">Poisson d'avril 2016</span>
+            </a>
+        </div><div class="item folder none">
+            <span class="indicator">
+                <img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/tree-indicator.svg">
+            </span>
+            <a href="http://efreidoc.fr/PrayForParis/">
+                <span class="icon"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/folder-page.svg"></span>
+                <span class="label">PrayForParis</span>
+            </a>
+        </div></div></div></div></div><div id="notification" class="hidden">loading...</div><div id="pv-overlay" class="hidden">
+            <div id="pv-container"></div>
+            <div id="pv-spinner" class="hidden"><img class="back"><img class="spinner" src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/spinner.svg"></div>
+            <div id="pv-prev-area" class="hof"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-prev.svg"></div>
+            <div id="pv-next-area" class="hof"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-next.svg"></div>
+            <div id="pv-bottombar" class="clearfix hof">
+                <ul id="pv-buttons">
+                    <li id="pv-bar-close" class="bar-right bar-button"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-close.svg"></li>
+                    <li id="pv-bar-raw" class="bar-right"><a class="bar-button" target="_blank"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-raw.svg"></a></li>
+                    <li id="pv-bar-fullscreen" class="bar-right bar-button"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-fullscreen.svg"></li>
+                    <li id="pv-bar-next" class="bar-right bar-button"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-next.svg"></li>
+                    <li id="pv-bar-idx" class="bar-right bar-label"></li>
+                    <li id="pv-bar-prev" class="bar-right bar-button"><img src="Cours%20-%20efreidoc.fr%20)%20L1%20-%20PL1%20)%20Syst%C3%A8me%20%C3%A0%20la%20fonction%20)%20Cours_fichiers/preview-prev.svg"></li>
+                </ul>
+            </div>
+        </div></body></html>
